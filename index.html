@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Clone</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">Calculator</div>
+    <!-- Calculator Section -->
+    <div class="calculator">
+        <!-- Display Section -->
+        <div class="display">
+        <input type="text" id="result" value="0" disabled>
+        </div>
+        <!-- Calculator Buttons -->
+        <div class="buttons">
+            <!-- Number an Operator Buttons -->
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <!-- Clear Button -->
+        <button onclick="clearDisplay()">C</button>
+        </div>
+        <!-- Equals Button -->
+        <button type="button" class ="block-btn" onclick="calculateResult()">=</button>      
+    </div>
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        Copyright © 2023 Design by LR. All Rights Reserved.
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
